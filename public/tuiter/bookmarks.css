@@ -1,0 +1,139 @@
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-border{
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 2px;
+    padding-left: 16px;
+
+}
+
+.wd-child{
+    margin-top: -1px;
+}
+
+.wd-other-child{
+    margin-top: -2px;
+}
+
+
+.wd-border-between{
+    border-top: 1px solid lightgray;
+}
+.wd-text{
+    font-family: Helvetica ;
+
+}
+.wd-typeA-border{
+    border-bottom: 1px solid lightgray;
+}
+
+.wd-typeA{
+    font-size: 20px;
+    color: white;
+    margin-top: 12px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.wd-handle{
+    color: lightgray;
+    font-size:13px;
+    margin:0 0 12px 0;
+}
+
+.wd-profile{
+    margin-top: 12px;
+    margin-right: 12px;
+    border-radius: 50%;
+    width:48px;
+    height:48px;
+}
+
+.wd-section-left{
+    float: left;
+    display: inline-block;
+}
+
+.wd-content{
+    margin: 12px 0 12px 0;
+    font-size:15px;
+}
+
+.wd-lightgray{
+    color:lightgray;
+}
+
+.wd-white{
+    color: white;
+}
+
+p.post{
+    font-size: 15px;
+    display: table-cell;
+    width:506px;
+}
+
+.wd-post{
+    margin:0 16px 12px 12px;
+}
+
+.wd-below{
+    margin-left: 60px;
+}
+.wd-pic{
+    width:504px;
+    height: 264px;
+    position: center;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.wd-border-pic{
+    border-radius:13px;
+    border-color:lightgray;
+    border-width: 1px;
+    border-style: solid;
+    width:504px;
+}
+
+p.below-pic{
+    margin:12px;
+}
+
+p.new{
+    line-height: 150%;
+}
+
+.wd-margin{
+    margin-top:12px;
+}
+
+.wd-number{
+    margin-left: 12px;
+}
+
+.wd-red{
+    color:red;
+}
+
+.wd-icon{
+    width:504px;
+    margin:0 16px 12px 60px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+li{
+    margin-right: auto;
+}
+
+
+
+
