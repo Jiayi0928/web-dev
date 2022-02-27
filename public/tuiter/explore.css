@@ -65,8 +65,8 @@
 }
 
 .fa-cog.wd-gear-icon{
-    color:lightgray;
-    font-size: 18px;
+    color:rgb(29, 161, 242);
+    font-size: 20px;
 }
 
 .wd-section2{
@@ -78,10 +78,9 @@
 .wd-typeb-text{
     font-size: 15px;
     text-decoration: none;
-    font-family: Helvetica;
     font-weight: bold;
-    padding:16px 0px;
-    margin: 0px 16px;
+    padding:16px 0;
+    margin: 0 16px;
 }
 .wd-typeb-rest{
     color:rgb(110, 118, 125);
@@ -273,6 +272,9 @@ div:nth-child(n+2){
     font-weight: bold;
 }
 
+.wd-user-follow:hover{
+    background-color: #373b3e;
+}
 .wd-show-more{
     color:rgb(29, 161, 242);
 }
@@ -303,7 +305,6 @@ div:nth-child(n+2){
 }
 
 
-
 .wd-username{
     color: lightgray;
     font-size: 16px;
@@ -323,7 +324,46 @@ p.follow{
     font-size: 14px!important;
 }
 
+.wd-grey{
+    color: grey;
+}
 
+.wd-white{
+    color: white;
+}
+
+.wd-post{
+    display: table-cell;
+}
+
+.wd-dot{
+    float: right;
+    padding-right: 0;
+    margin-left: auto;
+}
+
+.wd-border-pic{
+    border-radius:13px;
+    border-color:grey;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.wd-news-pic{
+    width: 100%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+}
+
+
+.wd-none-pic{
+    width: 100%;
+    border-radius: 13px;
+
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .list-group-item.wd-list-group-item-override{
