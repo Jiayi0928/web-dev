@@ -23,7 +23,7 @@ const NavigationSidebar = (active) => {
             <div class="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none d-none">Notifications</div></div></a>
             </li>
             
-            ${active === 'messgaes' ? `<li class="list-group-item list-group-item-action active">` : `<li class="list-group-item list-group-item-action">`}
+            ${active === 'messages' ? `<li class="list-group-item list-group-item-action active">` : `<li class="list-group-item list-group-item-action">`}
             <a href="messages.html" class="list-group-item-action text-decoration-none" >
             <div class="row"><div class="col-1"><i class="fa fa-envelope"></i></div>
             <div class="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none d-none">Messages</div></div></a>
