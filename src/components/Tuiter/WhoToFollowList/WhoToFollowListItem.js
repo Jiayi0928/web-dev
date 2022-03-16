@@ -10,7 +10,7 @@ const WhoToFollowListItem = ({
         <li className="list-group-item wd-user-follow">
             <div className="row">
                 <div className="col-xxl-2 col-xl-2 col-lg-2 mt-1 ps-1">
-                    <img src={who.avatarIcon} className="wd-profile"/>
+                    <img src={who.avatarIcon} className="wd-profile" alt=""/>
                 </div>
                 
                 <div className="col-xxl-6 col-xl-6 col-lg-6 mt-1 ms-1">

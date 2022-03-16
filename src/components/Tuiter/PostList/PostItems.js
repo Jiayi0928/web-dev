@@ -15,7 +15,7 @@ const PostItems = ({item= {
 
             <div className="mt-2 wd-section">
                 <div className="wd-section-left ms-0">
-                    <img className="wd-profile" src={item.img}/>
+                    <img className="wd-profile" src={item.img} alt=""/>
                 </div>
 
                 <div className="wd-post ps-2">
@@ -27,7 +27,7 @@ const PostItems = ({item= {
 
                 <div className="wd-border-pic">
                     {item.title && item.content && item.url ?
-                        <img className="wd-news-pic" src={item.pic}/>:<img className="wd-none-pic" src={item.pic}/>}
+                        <img className="wd-news-pic" src={item.pic} alt=""/>:<img className="wd-none-pic" src={item.pic} alt=""/>}
 
                     {item.title && item.content && item.url ?
                         <p className="ms-2 mt-2">

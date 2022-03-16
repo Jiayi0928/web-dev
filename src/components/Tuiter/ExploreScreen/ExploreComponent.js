@@ -2,12 +2,12 @@ import PostSummaryList from "../PostSummaryList/PostSummaryList";
 import React from "react";
 const ExploreComponent = () => { return(
     <div>
-        <div clasName="row">
+        <div className="row">
             <div className="wd-search wd-search-div p-3">
-                <i className="fa fa-search wd-search-icon"></i>
+                <i className="fa fa-search wd-search-icon"/>
                 <input type="text" placeholder="Search Tuiter"/>
                 <div className="wd-gear">
-                    <i className="fa fa-cog wd-gear-icon"></i>
+                    <i className="fa fa-cog wd-gear-icon"/>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@ const ExploreComponent = () => { return(
 
 
 <div className="wd-center-border wd-img-container">
-    <img className="wd-img" src="https://static.tweaktown.com/news/8/4/84438_01_elon-musk-giving-update-on-spacexs-starship-mars-rocket-thursday.jpg"/>
+    <img className="wd-img" src="/tuiter/images/starship.jpg" alt=""/>
     <div className="wd-img-title">SpaceX's Starship</div>
 </div>
 
