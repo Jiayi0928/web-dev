@@ -4,6 +4,7 @@ import Classes from "./Classes";
 import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import Todo from "./Todo";
+import ReduxExamples from "./redux-examples";
 
 const Index = () => {
     return(
@@ -16,12 +17,12 @@ const Index = () => {
             <Link to="/tuiter/home">
                 Tuiter
             </Link>
-
-
             <Todo/>
             <ConditionalOutput/>
             <Styles/>
             <Classes/>
+
+            <ReduxExamples/>
         </>
     )
 };
