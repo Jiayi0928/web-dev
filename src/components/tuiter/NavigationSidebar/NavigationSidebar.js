@@ -1,13 +1,13 @@
 import React from "react";
 import {Link}from "react-router-dom";
 
-const NavigationSidebar = ({active='explore'}) => {
+const NavigationSidebar = ({active='/'}) => {
     return(
         <>
         <div className="list-group">
             <Link to="/" className="list-group-item list-group-item-action "><i className="fa fa-brands fa-twitter"/></Link>
 
-            <Link to="/tuiter/home" className={`list-group-item-action text-decoration-none list-group-item list-group-item-action ${active==='home'?'active':''}`}>
+            <Link to="/tuiter/" className={`list-group-item-action text-decoration-none list-group-item list-group-item-action ${active==='/'?'active':''}`}>
             <div className="row"><div className="col-1"> <i className="fa fa-home"></i> </div>
             <div className="col-xxl-10 col-xl-10 d-xl-block d-lg-none d-md-none d-sm-none d-none">Home</div></div>
             </Link>

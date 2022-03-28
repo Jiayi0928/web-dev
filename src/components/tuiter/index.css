@@ -3,6 +3,15 @@
     width:48px;
     height:48px;
 }
+.wd-textarea{
+    color:#373b3e;
+    background: black;
+    width:100%;
+    border-color:black ;
+    border-bottom-color: #373b3e;
+
+}
+
 .wd-user-follow:hover{
     background-color: #373b3e;
 }
@@ -133,4 +142,19 @@
     width: 100%;
     border-radius: 13px;
 
+}
+
+.wd-blue{
+    color:rgb(29, 161, 242);
+    margin-left: 50px;
+}
+
+.wd-tweet{
+    float: right;
+    margin-left: auto;
+}
+
+.wd-tuit-list-pic{
+    width: 100%;
+    border-radius: 20px;
 }
