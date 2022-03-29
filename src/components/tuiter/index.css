@@ -158,3 +158,25 @@
     width: 100%;
     border-radius: 20px;
 }
+.wd-banner{
+    width: 100%;
+}
+
+.wd-ft{
+    font-size: 20px;
+}
+
+.wd-edit-img{
+    border-radius:50%;
+    width:180px;
+    height:180px;
+
+    position: relative;
+    margin-top: -100px;
+    margin-left: 20px;
+}
+
+.wd-edit-button{
+    border-color:rgb(47, 51, 54);
+    float: right;
+}

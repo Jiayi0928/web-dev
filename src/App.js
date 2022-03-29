@@ -11,6 +11,7 @@ import './components/tuiter/index.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
 import HomeScreen from "./components/tuiter/HomeScreen/HomeScreen";
+import ProfileScreen from "./components/tuiter/profile/ProfileScreen";
 function App() {
   return (
       <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
                   <Route path="tuiter" element={<Tuiter/>}>
                       <Route index element={<HomeScreen/>}/>
                       <Route path="explore" element={<ExploreScreen/>}/>
+                      <Route path="profile" element={<ProfileScreen/>}/>
                   </Route>
               </Route>
           </Routes>

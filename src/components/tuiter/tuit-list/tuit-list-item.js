@@ -1,7 +1,8 @@
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
 const TuitListItem = ({tuit}) => {
-    const dispatch = useDispatch(); const deleteTuit = (tuit) => {
+    const dispatch = useDispatch();
+    const deleteTuit = (tuit) => {
         dispatch({type: 'delete-tuit', tuit}) };
     return(
 

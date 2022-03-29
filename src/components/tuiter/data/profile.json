@@ -1,0 +1,13 @@
+{
+    "firstName": "Jiayi",
+    "lastName": "Ma",
+    "handle": "web-dev",
+    "img": "/tuiter/alice.jpg",
+    "banner": "/tuiter/banner.jpg",
+    "bio": "A website for CS5620 course",
+    "location": "Boston, MA",
+    "birth": "Born September 28, 1998",
+    "joined_date": "Joined February 2022",
+    "following": 123,
+    "followers": 234
+}
