@@ -8,11 +8,11 @@ const TuitListItem = ({tuit}) => {
 
         <>
             <li className="list-group-item d-flex">
-                <div>
+                <div className="col-1">
                     <img className="wd-profile" src={tuit.avatar_image}/>
                 </div>
 
-                <div>
+                <div className="col-11">
                 <span className="fw-bold ms-2">{tuit.postedBy.username}</span>
                 <span className="wd-grey"> @{tuit.handle}</span>
                     <i onClick={() => deleteTuit(dispatch,tuit)} className="fas fa-remove float-end"/>
