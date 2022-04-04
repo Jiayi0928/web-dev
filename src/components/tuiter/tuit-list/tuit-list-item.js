@@ -1,9 +1,9 @@
 import {useDispatch} from "react-redux";
+import {deleteTuit} from "../../actions/tuits-actions";
 import TuitStats from "./tuit-stats";
 const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit}) };
+
     return(
 
         <>
@@ -15,7 +15,7 @@ const TuitListItem = ({tuit}) => {
                 <div>
                 <span className="fw-bold ms-2">{tuit.postedBy.username}</span>
                 <span className="wd-grey"> @{tuit.handle}</span>
-                    <i onClick={() => deleteTuit(tuit)} className="fas fa-remove fa-2x fa-pull-right"/>
+                    <i onClick={() => deleteTuit(dispatch,tuit)} className="fas fa-remove float-end"/>
                 <p className="ms-2">{tuit.tuit}</p>
                     {tuit.attachments && tuit.attachments.image &&
                         <img className="wd-tuit-list-pic" src={tuit.attachments.image} alt=""/>
