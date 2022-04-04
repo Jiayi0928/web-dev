@@ -21,7 +21,7 @@ const TuitListItem = ({tuit}) => {
                         <img className="wd-tuit-list-pic" src={tuit.attachments.image} alt=""/>
                     }
                     {tuit.attachments && tuit.attachments.video &&
-                        <iframe height="350px" className="wd-tuit-list-pic" src={'https://www.youtube.com/embed/' + tuit.attachments.video}></iframe>
+                        <iframe height="350px" className="wd-tuit-list-pic" src={'https://www.youtube.com/embed/' + tuit.attachments.video}/>
                     }
                     <TuitStats tuit={tuit}/>
                 </div>
