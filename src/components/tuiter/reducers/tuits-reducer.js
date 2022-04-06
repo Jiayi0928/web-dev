@@ -1,4 +1,4 @@
-import {FIND_ALL_TUITS, DELETE_TUIT,CREATE_TUIT} from "../../actions/tuits-actions";
+import {FIND_ALL_TUITS, DELETE_TUIT,CREATE_TUIT,UPDATE_TUIT} from "../../actions/tuits-actions";
 
 const tuitsReducer = (state = [], action) => {
     switch (action.type) {
@@ -12,6 +12,10 @@ const tuitsReducer = (state = [], action) => {
         case DELETE_TUIT:
             return state.filter(
                 tuit => tuit._id !== action.tuit._id);
+        case UPDATE_TUIT:
+            return state.map(
+                tuit => tuit._id === action.tuit._id ?
+                    action.tuit : tuit);
         default:
             return state;
     }

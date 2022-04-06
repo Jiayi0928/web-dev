@@ -12,7 +12,7 @@ const TuitList = () => {
 
     useEffect(() =>
             findAllTuits(dispatch),
-        []);
+        [dispatch]);
 
 
     return (

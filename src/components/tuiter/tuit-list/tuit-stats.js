@@ -1,4 +1,5 @@
 import {useDispatch} from "react-redux";
+import {updateTuit} from "../../actions/tuits-actions";
 const TuitStats = ({tuit}) => { const dispatch = useDispatch();
     const likeTuit = () => {
     dispatch({type: 'like-tuit', tuit});
@@ -15,14 +16,83 @@ const TuitStats = ({tuit}) => { const dispatch = useDispatch();
                 <span>{tuit.stats.retuits}</span>
             </span>
 
-            <span className="col-3" onClick={likeTuit}> {
-                tuit.liked &&
-                <i className="fas fa-heart me-1" style={{color: 'red'}}/> }
+            <span className="col-3">
+
+                {
+
+                    tuit.liked &&
+                    <i className="fa-solid fa-thumbs-up"
+                    onClick={() => updateTuit(dispatch, {
+                            ...tuit,
+                            liked: false,
+                            stats: {
+                                comments: tuit.stats.comments,
+                                retuits: tuit.stats.retuits,
+                                likes: tuit.stats.likes - 1,
+                                dislikes: tuit.stats.dislikes
+                            }
+                        }
+                    )}>
+
+                    </i>
+                }
+
                 {
                     !tuit.liked &&
-                    <i className="far fa-heart me-1"/>
+                    <i className="fa-regular fa-thumbs-up"
+                       onClick={() => updateTuit(dispatch, {
+                               ...tuit,
+                               liked: true,
+                               stats: {
+                                   comments: tuit.stats.comments,
+                                   retuits: tuit.stats.retuits,
+                                   likes: tuit.stats.likes + 1,
+                                   dislikes: tuit.stats.dislikes
+                               }
+                           }
+                    )}>
+
+                    </i>
+                }{tuit.stats && tuit.stats.likes}
+
+                {
+
+                    tuit.disliked &&
+                    <i className="fa-solid fa-thumbs-down ms-3"
+                       onClick={() => updateTuit(dispatch, {
+                               ...tuit,
+                               disliked: false,
+                               stats: {
+                                   comments: tuit.stats.comments,
+                                   retuits: tuit.stats.retuits,
+                                   likes: tuit.stats.likes,
+                                   dislikes: tuit.stats.dislikes -1
+                               }
+                           }
+                       )}>
+
+                    </i>
                 }
-                {tuit.stats && tuit.stats.likes}
+
+                {
+                    !tuit.disliked &&
+                    <i className="fa-regular fa-thumbs-down ms-3"
+                       onClick={() => updateTuit(dispatch, {
+                               ...tuit,
+                               disliked: true,
+                               stats: {
+                                   comments: tuit.stats.comments,
+                                   retuits: tuit.stats.retuits,
+                                   likes: tuit.stats.likes,
+                                   dislikes: tuit.stats.dislikes+1
+                               }
+                           }
+                       )}>
+
+                    </i>
+                }
+
+                {tuit.stats && tuit.stats.dislikes}
             </span>
 
             <span className="col-3">
